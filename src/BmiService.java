@@ -1,12 +1,12 @@
 public class BmiService {
 
-    public int calculate(double x, int y) {
-        double z = x * x;
-        double result = y / z;
+    public int calculate(double height, int weight) {
+        double sqrHeight = height * height;
+        double result = weight / sqrHeight;
         return (int) result;
 
-        /*public int calculate(double x, int y) {
-            double result = y / Math.pow(x, x);
+        /*public int calculate(double height, int weight) {
+            double result = weight / Math.pow(height, height);
             return (int) result ;*/
     }
 }
